@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var loans = [];
+	var c_loan = 5000;
+	var payoff = 20;
+	var i = 0;
+	while(c_loan < 5100){
+		
+		loans[i] = c_loan*(1 + 0.01/12)+20;	
+		c_loan = c_loan*(1 + 0.01/12)+20;
+		document.writeln(c_loan+"<br/>");
+		i++;
+	}
+		document.writeln(i);
+		document.writeln(loans.length);
+</script>
+</body>
+</html>
